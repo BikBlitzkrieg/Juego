@@ -1,0 +1,21 @@
+.memory-game {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    overflow: hidden; /* Agregamos esta propiedad para recortar las imágenes que sean más grandes */
+}
+
+.card img {
+    display: block; /* Cambiamos a 'block' para evitar espacios vacíos debajo de las imágenes */
+    width: 100%; /* Establecemos el ancho al 100% para ajustarse al contenedor */
+    height: 100%; /* Establecemos la altura al 100% para ajustarse al contenedor */
+    object-fit: cover; /* Utilizamos 'cover' para recortar las imágenes y ajustarlas al contenedor */
+}
